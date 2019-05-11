@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">QuizUi</string>
+    <string name="question_text_default">What method you should override to use Android menu?</string>
+    <string name="option_one_default">onCreateOptionsMenu()</string>
+    <string name="option_two_default">onCreateMenu()</string>
+    <string name="option_three_default">onMenuCreated()</string>
+    <string name="option_four_default">onCreateContextMenu()</string>
+    <string name="correct_answer">Correct Answer</string>
+    <string name="next">Next</string>
+    <string name="prev">Prev</string>
+    <string name="select_category">Select Category</string>
+    <string name="select_correct_answer">Wow! Correct Answer</string>
+    <string name="select_wrong_answer">Sorry! Wrong Answer</string>
+    <string name="java">JAVA</string>
+    <string name="android">ANDROID</string>
+
+    <string-array name="androidQuestion">
+        <item>What method you should override to use Android menu?</item>
+        <item>What method you should override to use Android menu?</item>
+        <item>What method you should override to use Android menu?</item>
+        <item>What method you should override to use Android menu?</item>
+    </string-array>
+    <string-array name="androidOptionOne">
+        <item>onCreateOptionsMenu()</item>
+        <item>onCreateOptionsMenu()</item>
+        <item>onCreateOptionsMenu()</item>
+        <item>onCreateOptionsMenu()</item>
+    </string-array>
+    <string-array name="androidOptionTwo">
+        <item>onCreateMenu()</item>
+        <item>onCreateMenu()</item>
+        <item>onCreateMenu()</item>
+        <item>onCreateMenu()</item>
+    </string-array>
+    <string-array name="androidOptionThree">
+        <item>onMenuCreated()</item>
+        <item>onMenuCreated()</item>
+        <item>onMenuCreated()</item>
+        <item>onMenuCreated()</item>
+    </string-array>
+    <string-array name="androidOptionFour">
+        <item>onCreateContextMenu()</item>
+    </string-array>
+</resources>
