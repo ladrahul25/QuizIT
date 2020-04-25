@@ -5,40 +5,80 @@
     <string name="option_two_default">onCreateMenu()</string>
     <string name="option_three_default">onMenuCreated()</string>
     <string name="option_four_default">onCreateContextMenu()</string>
+    <string name="question_index">%1$d / %2$d</string>
+
+
+    <string name="question_text_two">Which of the following is NOT a key feature of Work Manager?</string>
+    <string name="option_one_second">Schedule asynchronous one-off or periodic tasks</string>
+    <string name="option_two_second">Chain tasks together</string>
+    <string name="option_three_second">Ensures task execution, even if the app or device restarts</string>
+    <string name="option_four_second">Stop all background service</string>
+
     <string name="correct_answer">Correct Answer</string>
     <string name="next">Next</string>
     <string name="prev">Prev</string>
     <string name="select_category">Select Category</string>
     <string name="select_correct_answer">Wow! Correct Answer</string>
     <string name="select_wrong_answer">Sorry! Wrong Answer</string>
-    <string name="java">JAVA</string>
-    <string name="android">ANDROID</string>
+    <string name="select_any_option">Select any option.</string>
+    <string name="java">Java</string>
+    <string name="android">Android</string>
+    <string name="android_java">Android + Java</string>
 
-    <string-array name="androidQuestion">
-        <item>What method you should override to use Android menu?</item>
-        <item>What method you should override to use Android menu?</item>
-        <item>What method you should override to use Android menu?</item>
-        <item>What method you should override to use Android menu?</item>
-    </string-array>
-    <string-array name="androidOptionOne">
-        <item>onCreateOptionsMenu()</item>
-        <item>onCreateOptionsMenu()</item>
-        <item>onCreateOptionsMenu()</item>
-        <item>onCreateOptionsMenu()</item>
-    </string-array>
-    <string-array name="androidOptionTwo">
-        <item>onCreateMenu()</item>
-        <item>onCreateMenu()</item>
-        <item>onCreateMenu()</item>
-        <item>onCreateMenu()</item>
-    </string-array>
-    <string-array name="androidOptionThree">
-        <item>onMenuCreated()</item>
-        <item>onMenuCreated()</item>
-        <item>onMenuCreated()</item>
-        <item>onMenuCreated()</item>
-    </string-array>
-    <string-array name="androidOptionFour">
-        <item>onCreateContextMenu()</item>
-    </string-array>
+    <string name="question_three">Size of int in java is?</string>
+    <string name="option_one_third">16 bit</string>
+    <string name="option_two_third">32 bit</string>
+    <string name="option_three_third">64 bit</string>
+    <string name="option_four_third">Depends on execution environment</string>
+
+    <string name="question_four">toString() method is defined in?</string>
+    <string name="option_one_forth">java.lang.String</string>
+    <string name="option_two_forth">java.lang.Object</string>
+    <string name="option_three_forth">java.lang.util</string>
+    <string name="option_four_forth">None of these</string>
+
+    <string name="question_five">An attempt to add the null key to a TreeSet will result in</string>
+    <string name="option_one_fifth">Will compile</string>
+    <string name="option_two_fifth">Compile time Exception</string>
+    <string name="option_three_fifth">NullPointerException</string>
+
+    <string name="question_six">Which of those doesn\'t have an index based structure?</string>
+    <string name="option_one_six">List</string>
+    <string name="option_two_six">Set</string>
+    <string name="option_three_six">Map</string>
+
+    <string name="question_seven">java.util.Collections is a:</string>
+    <string name="option_one_seven">Class</string>
+    <string name="option_two_seven">Interface</string>
+    <string name="option_three_seven">Object</string>
+    <string name="option_four_seven">None of the above</string>
+
+    <string name="question_eight">Which of those allows duplicate elements?</string>
+    <string name="option_one_eight">Set</string>
+    <string name="option_two_eight">List</string>
+    <string name="option_three_eight">All</string>
+    <string name="option_four_eight">None of the above</string>
+
+    <string name="question_nine">Which allows the storage of a null key and null values?</string>
+    <string name="option_one_nine">Hashtable</string>
+    <string name="option_two_nine">HashMap</string>
+    <string name="option_three_nine">None of the above</string>
+
+    <string name="question_ten">HashSet internally uses?</string>
+    <string name="option_one_ten">Set</string>
+    <string name="option_two_ten">Hashmap</string>
+    <string name="option_three_ten">List</string>
+    <string name="option_four_ten">Collection</string>
+
+
+    <string name="question_eleven">ADB stands for?</string>
+    <string name="option_one_eleven">Android Delete Bridge</string>
+    <string name="option_two_eleven">Android Drive Bridge</string>
+    <string name="option_three_eleven">Android Destroy Bridge</string>
+    <string name="option_four_eleven">Android Debug Bridge</string>
+
+
+
+
+
 </resources>

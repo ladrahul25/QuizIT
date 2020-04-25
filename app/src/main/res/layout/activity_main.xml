@@ -1,26 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
-    android:padding="@dimen/dimen_8dp"
-    tools:context=".activities.MainActivity">
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                                            xmlns:tools="http://schemas.android.com/tools"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:padding="@dimen/dimen_8dp"
+                                            tools:context=".activities.MainActivity"
+    android:background="@color/backgroundColor">
+
+    <TextView
+        android:id="@+id/quesionIndex"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/cardView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/dimen_16sp"/>
 
     <TextView
         android:id="@+id/cardView"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="0dp"
         android:padding="@dimen/dimen_8dp"
         android:layout_margin="@dimen/dimen_8dp"
-        app:layout_constraintBottom_toBottomOf="@+id/glHoriHalf"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/glHoriHalf"
+        app:layout_constraintTop_toBottomOf="@+id/quesionIndex"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         android:gravity="center"
-        android:text="@string/question_text_default"
-        android:textColor="@color/colorWhite"
+        android:textColor="@color/colorPrimary"
         android:textSize="@dimen/dimen_20sp"
         android:textStyle="bold">
     </TextView>
@@ -31,7 +43,6 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:elevation="@dimen/dimen_2dp"
-        android:text="@string/option_one_default"
         app:layout_constraintBottom_toTopOf="@+id/optionTwo"
         app:layout_constraintTop_toBottomOf="@+id/glHoriHalf"
         app:layout_constraintRight_toLeftOf="@+id/glVertFiveRight"
@@ -43,7 +54,6 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:elevation="@dimen/dimen_2dp"
-        android:text="@string/option_two_default"
         app:layout_constraintBottom_toTopOf="@+id/optionThree"
         app:layout_constraintTop_toBottomOf="@+id/optionOne"
         app:layout_constraintRight_toLeftOf="@+id/glVertFiveRight"
@@ -55,7 +65,6 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:elevation="@dimen/dimen_2dp"
-        android:text="@string/option_three_default"
         app:layout_constraintBottom_toTopOf="@+id/optionFour"
         app:layout_constraintTop_toBottomOf="@+id/optionTwo"
         app:layout_constraintRight_toLeftOf="@+id/glVertFiveRight"
@@ -69,7 +78,6 @@
         android:layout_marginBottom="8dp"
         android:padding="@dimen/dimen_8dp"
         android:elevation="@dimen/dimen_2dp"
-        android:text="@string/option_four_default"
         app:layout_constraintBottom_toTopOf="@+id/glHoriHalfSeven"
         app:layout_constraintTop_toBottomOf="@+id/optionThree"
         app:layout_constraintRight_toLeftOf="@+id/glVertFiveRight"
@@ -82,8 +90,7 @@
         style="@style/RoundedCornerMaterialAnswer"
         android:layout_margin="@dimen/dimen_8dp"
         android:gravity="center_vertical|center_horizontal"
-        android:text="@string/correct_answer"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintBottom_toTopOf="@+id/next"
         app:layout_constraintLeft_toLeftOf="@+id/glVertFiveLeft"
         app:layout_constraintRight_toRightOf="@+id/glVertFiveRight"
         app:layout_constraintTop_toBottomOf="@id/glHoriHalfSeven"
@@ -92,60 +99,46 @@
     </TextView>
 
     <TextView
+        android:id="@+id/next"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/next"
-        android:textColor="@color/colorWhite"
+        android:textColor="@color/colorPrimary"
         android:gravity="center"
         android:padding="@dimen/dimen_4dp"
         android:textSize="@dimen/dimen_18sp"
         android:onClick="goNext"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        android:drawableEnd="@drawable/baseline_keyboard_arrow_right_white_48"/>
+        app:layout_constraintRight_toRightOf="parent"/>
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:drawableStart="@drawable/baseline_keyboard_arrow_left_white_48"
-        android:gravity="center"
-        android:onClick="goPrev"
-        android:padding="@dimen/dimen_4dp"
-        android:text="@string/prev"
-        android:textColor="@color/colorWhite"
-        android:textSize="@dimen/dimen_18sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent" />
 
-    <android.support.constraint.Guideline
+    <androidx.constraintlayout.widget.Guideline
         android:id="@+id/glHoriHalf"
         android:layout_width="1dp"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.3" />
 
-    <android.support.constraint.Guideline
+    <androidx.constraintlayout.widget.Guideline
         android:id="@+id/glHoriHalfSeven"
         android:layout_width="1dp"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.8" />
 
-    <android.support.constraint.Guideline
+    <androidx.constraintlayout.widget.Guideline
         android:id="@+id/glVertFiveLeft"
         android:layout_width="1dp"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.05" />
 
-    <android.support.constraint.Guideline
+    <androidx.constraintlayout.widget.Guideline
         android:id="@+id/glVertFiveRight"
         android:layout_width="1dp"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.95" />
 
-</android.support.constraint.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

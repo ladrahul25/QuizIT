@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#7b1fa2</color>
-    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorPrimaryDark">#ea80fc</color>
     <color name="colorAccent">#FF4081</color>
     <color name="colorOptionButton">#ea80fc</color>
     <color name="colorOptionQuestion">#DCDCFF</color>
@@ -10,4 +10,5 @@
     <color name="colorRipple">#ae52d4</color>
     <color name="greenAnswer">#5ec639</color>
     <color name="redAnswer">#ff0000</color>
+    <color name="backgroundColor">#F5F5F5</color>
 </resources>
